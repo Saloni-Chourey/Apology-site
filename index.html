@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sorry 💔</title>
+<title>Sorry💔</title>
 <style>
     body {
         margin: 0;
@@ -84,11 +84,11 @@
     </p>
 
     <button onclick="showMessage()">Theek hai maaf kiya 😌</button>
-    <button id="noBtn" ontouchstart="moveButton()" onclick="moveButton()">Nahi karungi 😤</button>
+    <button id="noBtn" onmouseover="moveButton()">Nahi karungi 😤</button>
 
     <div class="hidden-message" id="msg">
-        Yay Mujhe Pataa Tha ❤️
-        <br>Tu Gussa Reh hi niii skti 🥺
+        Yay Mujhe pataaa tha ❤️
+        <br>Tu reh hi niii skti 🥺
     </div>
 </div>
 
@@ -143,15 +143,6 @@ function moveButton() {
         audio.play();
     }
 
-    // move button (mobile + desktop safe)
-    let x = Math.random() * (window.innerWidth - 100);
-    let y = Math.random() * (window.innerHeight - 50);
-
-    btn.style.position = 'fixed';
-    btn.style.left = x + 'px';
-    btn.style.top = y + 'px';
-}
-
     btn.style.position = 'absolute';
     btn.style.top = Math.random() * 80 + 'vh';
     btn.style.left = Math.random() * 80 + 'vw';
@@ -171,3 +162,4 @@ window.onload = () => {
 
 </body>
 </html>
+
